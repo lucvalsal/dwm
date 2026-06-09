@@ -114,6 +114,8 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	{ MODKEY,                       XK_F5,     xrdb,           {.v = NULL } },
+	{ MODKEY,                       XK_F2,     spawn,          SHCMD("brillo -U 10") },
+	{ MODKEY,                       XK_F3,     spawn,          SHCMD("brillo -A 10") },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
